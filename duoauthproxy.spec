@@ -1,5 +1,5 @@
 Name:           duoauthproxy
-Version:        2.4.17
+Version:        2.5.4
 Release:        1%{?dist}
 Summary:        Duo Authentication Proxy
 
@@ -17,6 +17,7 @@ Patch0:         non-interactive-install.patch
 
 BuildRequires: python-devel
 BuildRequires: openssl-devel
+#BuildRequires: libffi-devel
 BuildRequires: perl
 
 # Needed by the init script
@@ -92,5 +93,7 @@ fi
 %{_initddir}/%{name}
 
 %changelog
+* Thu Oct 12 2017 Glen Johnson <> 2.5.4-1
+- New version
 * Fri Oct 16 2015 John Thiltges <> 2.4.12-1
 - Initial package
