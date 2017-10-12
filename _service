@@ -1,0 +1,16 @@
+
+<services>
+
+  <service name="download_url">
+    <param name="host">dl.duosecurity.com</param>
+    <param name="protocol">https</param>
+    <param name="path">/duoauthproxy-2.4.17-src.tgz</param>
+  </service>
+
+  <service name="download_url">
+    <param name="host">raw.githubusercontent.com</param>
+    <param name="protocol">https</param>
+    <param name="path">/gsfjohnson/build-opensuse-dap/master/duoauthproxy.spec</param>
+  </service>
+
+</services>
