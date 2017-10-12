@@ -8,7 +8,7 @@ License:        Commercial
 URL:            https://www.duosecurity.com/docs/ldap
 Source0:        https://dl.duosecurity.com/duoauthproxy-%{version}-src.tgz
 Source1:        authproxy.sample-openldap.cfg
-Patch0:         non-interactive-install.patch
+#Patch0:         non-interactive-install.patch
 #Patch1:         allow-anon-bind.patch
 
 %define svc_user    nobody
@@ -17,7 +17,7 @@ Patch0:         non-interactive-install.patch
 
 BuildRequires: python-devel
 BuildRequires: openssl-devel
-#BuildRequires: libffi-devel
+BuildRequires: libffi-devel
 BuildRequires: perl
 
 # Needed by the init script
@@ -29,7 +29,7 @@ Proxies RADIUS or LDAP authentication attempts and adds Duo authentication
 
 %prep
 %setup -q -n %{name}-%{version}-src
-%patch0 -p1
+#%patch0 -p1
 #%patch1 -p1
 
 # Sample config
